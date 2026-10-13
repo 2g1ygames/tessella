@@ -1,0 +1,2 @@
+COPYRIGHT "Public domain font.  Share and enjoy."
+STARTCHAR copyright
