@@ -1,22 +1,38 @@
-# Tessella
+<p align="center">
+  <img src="images/cover.png" alt="Tessella" width="630">
+</p>
 
-![Tessella](images/cover.png)
+<h3 align="center">Pixel fonts for 54 writing systems on one grid — 10, 12 and 14 px</h3>
+<p align="center">748+ languages · free and open under the SIL Open Font License 1.1</p>
 
-**A pixel font family for 54 writing systems on one grid — in 10, 12 and 14 px.**
+<p align="center">
+  <a href="https://github.com/2g1ygames/tessella/releases/latest"><img alt="Download" src="https://img.shields.io/badge/download-v1.0.0-d6a85c?style=for-the-badge"></a>
+  <a href="https://2g1ygames.itch.io/tessella"><img alt="itch.io" src="https://img.shields.io/badge/itch.io-tessella-fa5c5c?style=for-the-badge&logo=itchdotio&logoColor=white"></a>
+  <a href="OFL.txt"><img alt="License: OFL 1.1" src="https://img.shields.io/badge/license-OFL%201.1-8caca0?style=for-the-badge"></a>
+</p>
+
+Pixel fonts for small sizes exist for a few major scripts, but most of the world's scripts are left out. **Tessella brings them onto one grid** — including smaller, often overlooked scripts such as Ol Chiki, Osage, Vai and Kirat Rai — so that every language can stand on equal footing in games and apps.
+
+<p align="center">
+  <img src="images/specimen_all.png" alt="54 writing systems in Tessella 10, 12 and 14" width="960">
+</p>
+
+## Quick start
+
+1. Download the zip for your size from **[Releases](https://github.com/2g1ygames/tessella/releases/latest)** and pick the file for your script, e.g. `Tessella12-devanagari.ttf`.
+2. Use it at **12 px (9 pt at 96 dpi)** with **anti-aliasing off**.
+3. Found a wrong or hard-to-read letter? **[Open an issue](https://github.com/2g1ygames/tessella/issues)** — reports from native readers help the most.
+
+<details>
+<summary><b>About Tessella — files, usage, how it was made, limits, license</b></summary>
+
 Covers **748+ languages**: 736 found by [Hyperglot](https://hyperglot.rosettatype.com) 0.8.1 (measured with a fix for its decomposition-order bug; the unmodified tool reports 725), plus 12 languages not in the Hyperglot database (Santali, Limbu, Eastern and Western Cham, Osage, Sunuwar, Bantawa, Rohingya, Ho, Lepcha, Tai Lü, Northern Thai).
+
 Made by Claude AI (Anthropic), who brought the source fonts onto one pixel grid and corrected and unified them; letter-shape changes were checked by blind reading. Free under the SIL Open Font License 1.1.
-
-**Why**: pixel fonts for small sizes exist for a few major scripts, but most of the world's scripts are left out — often their only pixel font is GNU Unifont, a 16px fixed-width font, and the pixel fonts that do exist come in different sizes, weights and heights. Tessella brings these scripts, including smaller and often overlooked ones such as Ol Chiki, Osage, Vai and Kirat Rai, onto the same grid as Latin, Chinese or Arabic, so that every language can stand on equal footing in games and apps.
-
-## Download
-
-Get the zip for the size you need from **[Releases](../../releases)** (`Tessella-10.zip`, `Tessella-12.zip`, `Tessella-14.zip`), or take single files from [`fonts/`](fonts). Also on itch.io: https://2g1ygames.itch.io/tessella
-
-![54 writing systems in Tessella 10, 12 and 14](images/specimen_all.png)
 
 ## What is in this repository
 
-`fonts/10`, `fonts/12`, `fonts/14` — one TTF per writing system, named `Tessella<size>-<script>.ttf` — for example `Tessella12-devanagari.ttf`.
+`fonts/10`, `fonts/12`, `fonts/14` (and the zips in Releases) — one TTF per writing system, named `Tessella<size>-<script>.ttf` — for example `Tessella12-devanagari.ttf`.
 Every file also contains Basic Latin and Latin-1 (A–Z, digits, punctuation, é ü ñ …) and common symbols (arrows, math, box drawing, shapes ▶ ○ ■, ⚠ ✓ ✗ …), so mixed text works. Combining diacritics (U+0300–036F) are in the Latin, Cyrillic, Greek and other non-shaping files and in the Korean, Japanese and Chinese files, not in the shaping-script files.
 
 | Size | Line | Baseline |
@@ -44,10 +60,6 @@ Pick the file for your language: `latin` for English, French, Vietnamese, Yoruba
 - **Shaping** uses the OpenType layout tables (GSUB/GPOS) of the source Noto fonts, with mark positions rounded to whole pixels.
 - **Verification**: changes to letter shapes were checked by independent AI readers who transcribed rendered text without knowing the source; changes that made any letter harder to read were undone. Every file passes the OpenType Sanitizer, and text in 180 languages renders without missing glyphs.
 
-## Reporting problems
-
-If a letter looks wrong or is hard to read in your language, please **[open an issue](../../issues)** with the script, the size (10, 12 or 14), the text you typed and a screenshot. Native readers' reports are the most valuable thing this project can get.
-
 ## Honest limits
 
 - AI readers are not native readers. Final judgment belongs to native readers and language institutions — reports are welcome.
@@ -62,12 +74,10 @@ If a letter looks wrong or is hard to read in your language, please **[open an i
 Tessella is licensed under the SIL Open Font License 1.1 (`OFL.txt`). You may use, embed, modify and redistribute it, including in commercial games; the fonts may not be sold on their own.
 It is derived from Fusion Pixel, Galmuri, the Noto families, SIL Kanchenjunga (all OFL 1.1) and misc-fixed (public domain). Their notices are in `OFL.txt` and `licenses/`. Reserved font names of the sources are not used.
 
----
+</details>
 
-# Tessella (한국어)
-
-- **받기**: [Releases](../../releases)에서 크기별 zip, 또는 [`fonts/`](fonts)에서 파일 하나씩 · itch.io: https://2g1ygames.itch.io/tessella
-- **오류 제보**: 글자가 틀리거나 읽기 어려우면 [Issues](../../issues)에 문자·크기·입력한 글·스크린샷을 남겨 주세요.
+<details>
+<summary><b>한국어 안내</b></summary>
 
 **54개 문자를 하나의 격자에 담은 픽셀 글꼴 가족 — 10 · 12 · 14 px.**
 **748개 이상 언어**: Hyperglot 0.8.1 측정 736(분해 글자 순서 버그를 고쳐 잼 · 그대로 돌리면 725) + Hyperglot 데이터베이스에 없는 언어 12(산탈리·림부·동/서 참·오세이지·수누와르·반타와·로힝야·호·렙차·타이 르·북부 태국어).
@@ -81,3 +91,8 @@ Claude AI(Anthropic)가 원본 글꼴을 한 픽셀 격자로 옮기고 손질·
 - **만든 방법**: 격자 = Fusion Pixel(라틴·그리스·키릴·가나·한글·한자) · 그 밖 = Noto 를 같은 화소 크기로 래스터한 뒤 손질 · 기호·부호 = Fusion → Galmuri·misc-fixed 6x13(10 = misc-fixed 6x10·6x9·5x8·6x12·Galmuri7 · Galmuri7 의 ∩ ∪ 뒤바뀜 같은 원본 오류는 피함) · 상자·블록은 줄끼리 이어지게 칸을 채움(비례폭이라 표 안 글자 열은 맞지 않음) · Fusion 의 화소 버릇을 판독으로 확인한 문자에만 · 14 = 12 늘림 · 10 = 12 줄임(획·고리를 지키도록 고른 행) · 결합 규칙 = Noto 의 OpenType 표.
 - **한계**: AI 판독자는 원어민이 아니다 · 글자 뼈대는 원본을 따른다 · 라틴 확장-D·E 희귀 글자 194자, 키릴 확장-A(결합 키릴 글자)와 그 밖의 희귀 키릴 107자, 가라이·올 오날, 셰이핑 문자 파일의 결합 부호는 아직 없다 · 한자 = Fusion Pixel 수록(12·14 = JIS X 0208·GB2312 1급·Big5 상용자 전부 · 10 = 같은 상용자 전부, 희귀 한자 약 1만 자는 12·14 에만) · 언어별 글자꼴(세르비아·마라티·우르두 나스탈리크)은 기본 꼴 · 부호 위치는 화소로 반올림.
 - **라이선스**: SIL Open Font License 1.1 — 게임 포함 상업적 사용·수정·재배포 가능, 글꼴만 단독으로 파는 것은 금지. 출처 고지는 `OFL.txt` 와 `licenses/`.
+
+- **받기**: [Releases](https://github.com/2g1ygames/tessella/releases/latest) · itch.io: https://2g1ygames.itch.io/tessella
+- **오류 제보**: 글자가 틀리거나 읽기 어려우면 [Issues](https://github.com/2g1ygames/tessella/issues)에 문자·크기·입력한 글·스크린샷을 남겨 주세요.
+
+</details>
