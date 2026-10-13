@@ -1,0 +1,126 @@
+name: Letter problem / 글자 문제
+description: A letter looks wrong, is hard to read, or is missing. · 글자가 틀리거나, 읽기 어렵거나, 빠져 있을 때
+title: "[Script] short description"
+labels: ["glyph"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping Tessella! Reports from native readers are the most valuable thing this project can get.
+        Tessella를 도와주셔서 감사합니다. 원어민의 제보가 가장 큰 도움이 됩니다.
+  - type: dropdown
+    id: script
+    attributes:
+      label: Script · 문자
+      options:
+        - "Adlam"
+        - "Arabic"
+        - "Armenian"
+        - "Balinese"
+        - "Bamum"
+        - "Batak"
+        - "Bengali"
+        - "Buginese"
+        - "Canadian Syllabics"
+        - "Chakma"
+        - "Cham"
+        - "Cherokee"
+        - "Cyrillic"
+        - "Devanagari"
+        - "Ethiopic"
+        - "Georgian"
+        - "Greek"
+        - "Gujarati"
+        - "Gurmukhi"
+        - "Han"
+        - "Hangul"
+        - "Hanifi Rohingya"
+        - "Hebrew"
+        - "Javanese"
+        - "Kana"
+        - "Kannada"
+        - "Khmer"
+        - "Kirat Rai"
+        - "Lao"
+        - "Latin"
+        - "Lepcha"
+        - "Limbu"
+        - "Malayalam"
+        - "Meetei Mayek"
+        - "Myanmar"
+        - "N'Ko"
+        - "New Tai Lue"
+        - "Ol Chiki"
+        - "Oriya"
+        - "Osage"
+        - "Sinhala"
+        - "Sundanese"
+        - "Sunuwar"
+        - "Syriac"
+        - "Tai Tham"
+        - "Tai Viet"
+        - "Tamil"
+        - "Telugu"
+        - "Thaana"
+        - "Thai"
+        - "Tibetan"
+        - "Tifinagh"
+        - "Vai"
+        - "Warang Citi"
+        - "Other / not sure"
+    validations:
+      required: true
+  - type: checkboxes
+    id: size
+    attributes:
+      label: Size · 크기
+      description: Which sizes show the problem? · 어느 크기에서 보이나요?
+      options:
+        - label: Tessella 10
+        - label: Tessella 12
+        - label: Tessella 14
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language · 언어
+      placeholder: e.g. Hindi, Santali, Amharic
+  - type: textarea
+    id: text
+    attributes:
+      label: Text you typed · 입력한 글
+      description: Paste the exact text that shows the problem. · 문제가 보인 글을 그대로 붙여 넣어 주세요.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What looks wrong? · 무엇이 이상한가요?
+      placeholder: e.g. "ক্ষ" looks like "হ", the vowel mark sits on the wrong letter, the letter is missing…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: How should it look? · 원래 어떻게 보여야 하나요?
+      description: Optional. A description, or a picture of the correct form. · 선택. 설명이나 올바른 모양의 그림.
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot · 스크린샷
+      description: Drag and drop an image here. · 그림을 끌어다 놓아 주세요.
+  - type: input
+    id: app
+    attributes:
+      label: App or engine · 프로그램·엔진
+      placeholder: e.g. Chrome, Word, Godot 4, Unity
+  - type: dropdown
+    id: native
+    attributes:
+      label: Are you a native reader of this script? · 이 문자를 모국어로 읽으시나요?
+      options:
+        - "Yes · 예"
+        - "No · 아니요"
+        - "Learning · 공부 중"
